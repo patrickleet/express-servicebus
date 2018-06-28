@@ -1,0 +1,23 @@
+{
+  "name": "express-servicebus",
+  "version": "1.0.0",
+  "description": "takes a bus and makes it available on the `res` object",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patrickleet/express-servicebus.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patrickleet/express-servicebus/issues"
+  },
+  "homepage": "https://github.com/patrickleet/express-servicebus#readme",
+  "devDependencies": {
+    "express": "^4.16.3",
+    "jest": "^23.2.0"
+  }
+}
