@@ -1,14 +1,22 @@
 {
   "name": "express-servicebus",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "takes a bus and makes it available on the `res` object",
   "main": "index.js",
   "scripts": {
-    "test": "jest --coverage"
+    "commit": "git-cz",
+    "test": "jest --coverage",
+    "semantic-release": "semantic-release",
+    "travis-deploy-once": "travis-deploy-once"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/patrickleet/express-servicebus.git"
+    "url": "https://github.com/patrickleet/express-servicebus.git"
   },
   "author": "",
   "license": "ISC",
@@ -17,7 +25,10 @@
   },
   "homepage": "https://github.com/patrickleet/express-servicebus#readme",
   "devDependencies": {
-    "express": "^4.16.3",
-    "jest": "^23.2.0"
+    "commitizen": "^2.10.1",
+    "cz-conventional-changelog": "^2.1.0",
+    "jest": "^23.2.0",
+    "semantic-release": "^15.6.0",
+    "travis-deploy-once": "^5.0.0"
   }
 }
