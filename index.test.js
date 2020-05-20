@@ -17,7 +17,7 @@ describe('express-servicebus', () => {
     expect(res.bus).toEqual(bus)
   })
 
-  it('does nothing is bus is not provided', () => {
+  it('does nothing if bus is not provided', () => {
     let mw = expressServicebus()
     let req = {}
     let res  = {}
